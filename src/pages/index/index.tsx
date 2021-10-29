@@ -2,6 +2,10 @@ import Taro, { Component, Config } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
 import './index.scss'
 
+import {
+  StNavBar
+} from '@lms/st-ui'
+
 export default class Index extends Component {
 
   componentWillMount () { }
@@ -22,12 +26,24 @@ export default class Index extends Component {
    * 提示和声明 navigationBarTextStyle: 'black' | 'white' 类型冲突, 需要显示声明类型
    */
   config: Config = {
-    navigationBarTitleText: '首页'
+    navigationBarTitleText: '首页',
+    navigationStyle: 'custom'
   }
 
   render () {
     return (
       <View className='index'>
+        {/* <StNavBar
+          title="标题"
+          isCustomContent={true}
+        >
+          sad
+        </StNavBar> */}
+        <StNavBar
+          title="标题"
+        >
+          sad
+        </StNavBar>
         <Text>Hello world!</Text>
       </View>
     )
