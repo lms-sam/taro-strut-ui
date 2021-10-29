@@ -3,8 +3,12 @@ import { View, Text } from '@tarojs/components'
 import './index.scss'
 
 import {
-  StNavBar
+  StNavBar,
+  StBaseLayout
 } from '@lms/st-ui'
+import {
+  StNavBar as SSNavBar
+} from 'taro-st-ui'
 
 export default class Index extends Component {
 
@@ -33,18 +37,29 @@ export default class Index extends Component {
   render () {
     return (
       <View className='index'>
+        <StBaseLayout
+          isTopTransparency={true}
+          isNavBarFix={true}
+          isNavBarCustomContent={true}
+          renderNavBarCon={()=>{
+            return (
+              <View>123</View>
+            )
+          }}
+        >
+        </StBaseLayout>
         {/* <StNavBar
           title="标题"
           isCustomContent={true}
         >
           sad
         </StNavBar> */}
-        <StNavBar
-          title="标题"
+        {/* <SSNavBar
+          title="标题2"
         >
           sad
-        </StNavBar>
-        <Text>Hello world!</Text>
+        </SSNavBar> */}
+        {/* <Text>Hello world!</Text> */}
       </View>
     )
   }

@@ -12711,6 +12711,28 @@ taro-css-to-react-native@^2.2.10:
     css-mediaquery "^0.1.2"
     postcss-value-parser "^3.3.0"
 
+taro-st-ui@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/taro-st-ui/-/taro-st-ui-1.0.0.tgz#f760964fceb5d9c5dae4119f5934f02d5681919d"
+  integrity sha512-ZLYpI4JP2KRZH160MsXOvYsHf4yMP/ZB/1wCa9zjm6InhHhZ3ynYM+BC/2FdJtdF0555IZZbnBRoJSZ92irE0w==
+  dependencies:
+    "@tarojs/components" "2.2.10"
+    "@tarojs/components-qa" "2.2.10"
+    "@tarojs/router" "2.2.10"
+    "@tarojs/taro" "2.2.10"
+    "@tarojs/taro-alipay" "2.2.10"
+    "@tarojs/taro-h5" "2.2.10"
+    "@tarojs/taro-qq" "2.2.10"
+    "@tarojs/taro-quickapp" "2.2.10"
+    "@tarojs/taro-rn" "2.2.10"
+    "@tarojs/taro-swan" "2.2.10"
+    "@tarojs/taro-tt" "2.2.10"
+    "@tarojs/taro-weapp" "2.2.10"
+    babel-runtime "^6.26.0"
+    nerv-devtools "^1.5.5"
+    nervjs "^1.5.5"
+    regenerator-runtime "0.11.1"
+
 tcp-port-used@^1.0.1:
   version "1.0.2"
   resolved "https://registry.npmjs.org/tcp-port-used/-/tcp-port-used-1.0.2.tgz#9652b7436eb1f4cfae111c79b558a25769f6faea"

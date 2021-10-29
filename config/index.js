@@ -1,4 +1,7 @@
 import path from 'path'
+
+const isBuildComponent = process.env.TARO_BUILD_TYPE === 'component'
+
 const config = {
   projectName: 'taro-strut-ui',
   date: '2021-10-29',
@@ -9,7 +12,7 @@ const config = {
     '828': 1.81 / 2
   },
   sourceRoot: 'src',
-  outputRoot: 'dist',
+  outputRoot: isBuildComponent ? 'dist' : `dist/${process.env.TARO_ENV}`,
   babel: {
     sourceMap: true,
     presets: [
