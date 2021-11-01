@@ -6,3 +6,9 @@
 // 基础组件
 @import './componetns/navBar.scss';
 @import './componetns/baseLayout.scss';
+@import './componetns/menusLinkLayout.scss';
+
+.st-scrollView {
+    width: 100%;
+    height: 100%;
+}

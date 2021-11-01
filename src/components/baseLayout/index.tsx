@@ -87,7 +87,7 @@ export default class StBaseLayout extends StComponent<StBaseLayoutProps, StBaseL
 StBaseLayout.defaultProps = {
     scrollTop: 0,
     topToShowScrollDistanch: 60,
-    renderBottom: ()=>{},
+    // renderBottom: ()=>{},
     renderTop: ()=>{},
 }
 StBaseLayout.propTypes = {

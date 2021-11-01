@@ -13,6 +13,7 @@ export interface StMenusLinkLayoutProps extends StComponent {
      * 点击头部触发事件
      */
     onLeftClick?: (event: CommonEvent) => void
+    renderMenuItem?: (event: CommonEvent) => void
 }
 
 export interface StMenusLinkLayoutState {

@@ -4,7 +4,8 @@ import './index.scss'
 
 import {
   StNavBar,
-  StBaseLayout
+  StBaseLayout,
+  StMenusLinkLayout
 } from '@lms/st-ui'
 import {
   StNavBar as SSNavBar
@@ -38,15 +39,49 @@ export default class Index extends Component {
     return (
       <View className='index'>
         <StBaseLayout
+          title="标题"
           isTopTransparency={true}
-          isNavBarFix={true}
+          isNavBarFix={false}
           isNavBarCustomContent={true}
+          isBrickBottom
           renderNavBarCon={()=>{
             return (
               <View>123</View>
             )
           }}
+          renderBottom={()=>{
+            return (
+              <View>123</View>
+            )
+          }}
         >
+          <StMenusLinkLayout
+            // direction="horizontal"
+            menuWidth="200"
+            menusDatas={[1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8]}
+            conDatas={[1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8]}
+            isBrickBottom
+            renderMenuItem={(data)=>{
+              return (
+                <View>{data}</View>
+              )
+            }}
+            renderConItems={(data)=>{
+              return (
+                <View>{data}</View>
+              )
+            }}
+            // renderConItems={(datas)=>{
+            //   return (
+            //     <View>{datas.map((data)=>{
+            //       console.log(data)
+            //       return (
+            //         <View>{data}</View>
+            //       )
+            //     })}</View>
+            //   )
+            // }}
+          ></StMenusLinkLayout>
         </StBaseLayout>
         {/* <StNavBar
           title="标题"
